@@ -1254,3 +1254,35 @@ body {
 }
 
 /* ====================================== */
+
+.social {
+  position: fixed;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  right: 20px;
+  transform: translate(0px, -50%);
+}
+
+@media (max-width: 875px) {
+  .social {
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    right: 0;
+    margin-bottom: 15px;
+    transition: all 0.3s ease 0s;
+  }
+  .social__item img {
+    vertical-align: middle;
+  }
+
+  .social__item:hover {
+    transform: scale(1.2);
+    opacity: 0.6;
+    transition: all 0.3s ease 0s;
+  }
+}
